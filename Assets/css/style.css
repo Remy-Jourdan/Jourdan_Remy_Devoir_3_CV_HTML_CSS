@@ -20,23 +20,12 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    padding: 25px;
 }
 
 #photo{
     grid-column: 1 / span 1;
     place-self: center center;
-}
-
-#text{
-    grid-column: 2 / span 4;
-    place-self: center center;
-    font-family: Lato, sans-serif;
-    color: #ffffff;
-}
-
-a{
-    text-decoration: none;
-    color: #ffffff;
 }
 
 #photo_profil{
@@ -47,13 +36,22 @@ a{
     border-radius: 50%;
 }
 
+#text{
+    grid-column: 2 / span 4;
+    place-self: center center;
+    font-family: Lato, sans-serif;
+    color: #ffffff;
+}
+
 h1{
     justify-self: center;
     font-size: 3em;
+    line-height: 0%;
 }
+
 #poste{
     justify-self: center;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 2em;
 }
 
@@ -69,6 +67,11 @@ h1{
 
 #contact li img{
     margin-right: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 main section p{
