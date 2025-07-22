@@ -10,6 +10,7 @@ body{
 #general{
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
     width: 1160px;
     font-family: Lato, sans-serif;
 }
@@ -38,6 +39,10 @@ header{
     object-fit: cover;
     border: 5px solid #ffffff;
     border-radius: 50%;
+}
+
+#photo_profil:hover{
+    cursor: zoom-in;
 }
 
 #text{
@@ -140,6 +145,7 @@ h2{
     text-indent: 2em;
     margin: 0;
     font-size: 1em;
+    text-align: justify;
 }
 
 h3 small{
@@ -153,6 +159,13 @@ h3 small{
     justify-content: space-between;
     align-items: stretch;
 }
+
+.date:hover{
+    background-color: #e3e3e3;
+    border-left: solid 10px #17abb3;
+    padding-left: 10px;
+}
+
 h3{
     margin: 0;
     
@@ -178,6 +191,10 @@ footer{
 }
 footer img{
     padding: 10px;
+}
+
+footer img:hover{
+    opacity: 70%;
 }
 
 footer p{
