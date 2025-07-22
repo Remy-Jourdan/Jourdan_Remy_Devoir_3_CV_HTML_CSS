@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+/* Mis en forme général */
 body{
     margin: 0;
-    background-color: #e3e3e3;
+    background-color: #f5f5f5;
 }
 
 #general{
     margin-left: auto;
     margin-right: auto;
     width: 1160px;
+    font-family: Lato, sans-serif;
 }
+
+/* Mis en forme de l'en-tête */
 
 header{
     background-color: #17abb3;
@@ -24,7 +28,7 @@ header{
 }
 
 #photo{
-    grid-column: 1 / span 1;
+    grid-column: 1;
     place-self: center center;
 }
 
@@ -39,7 +43,6 @@ header{
 #text{
     grid-column: 2 / span 4;
     place-self: center center;
-    font-family: Lato, sans-serif;
     color: #ffffff;
 }
 
@@ -57,7 +60,6 @@ h1{
 
 #contact{
    justify-self: center;
-   list-style-type: none;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr;
@@ -74,9 +76,110 @@ a{
     color: #ffffff;
 }
 
-main section p{
-    width: 400px;
-    height: 100px;
-    margin: 20px;
+ul{
+       list-style-type: none;
+}
+
+/* Mis en page du corps */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#section_1{
+    grid-column: 1;
+    background-color: #e3e3e3;
+    padding: 30px;
+}
+
+h2{
+    color: #17abb3;
+    font-weight: bolder;
+    font-size: 2em;
+    border-bottom: 2px solid #33333322;
+    padding-bottom: 20px;
+}
+
+.liste{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left{
+    padding: 0;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.right{
+    line-height: 2em;
+    padding: 0;
+    text-align: right;
+    font-family: raleway, sans-serif;
+}
+
+.puce{
+    padding: 0;
+    font-family: raleway, sans-serif;
+}
+.puce li:before{
+    content: "\0025A0";
+    margin-right: 20px;
+    color: #17abb3;
+}
+
+#section_2{
+    grid-column: 2 / span 4;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.latin{
+    text-indent: 2em;
+    margin: 0;
+    font-size: 1em;
+}
+
+h3 small{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+h3{
+    margin: 0;
+    
+}    
+
+.date .right{
+    color: #17abb3;
+    font-size: 1.2em;
+}
+.right p{
+    margin: 0;
+    vertical-align: top;
+}
+
+/* mis en page du pied */
+
+footer{
+    padding: 30px;
+    background-color: #17abb3;
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+}
+footer img{
     padding: 10px;
+}
+
+footer p{
+    margin-bottom: 0;
 }
